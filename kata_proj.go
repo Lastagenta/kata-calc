@@ -6,6 +6,10 @@ import (
 	"strings"
 )
 
+func main() {
+	fmt.Println("Hello Kata,ochen neponyatnii komment po TZ")
+}
+
 var roman = map[string]int{
 	"C":    100,
 	"XC":   90,
