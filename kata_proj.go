@@ -1,14 +1,12 @@
 package myawesomeproject
 
 import (
+	"bufio"
 	"fmt"
+	"os"
 	"strconv"
 	"strings"
 )
-
-func main() {
-	fmt.Println("Hello Kata,ochen neponyatnii komment po TZ")
-}
 
 var roman = map[string]int{
 	"C":    100,
@@ -141,4 +139,13 @@ func intToRoman(romanResult int) {
 		}
 	}
 	fmt.Println(romanNum)
+}
+func main() {
+	fmt.Println("Sorry kata")
+	reader := bufio.NewReader(os.Stdin)
+	for {
+		console, _ := reader.ReadString('\n')
+		s := strings.ReplaceAll(console, " ", "")
+		base(strings.ToUpper(strings.TrimSpace(s)))
+	}
 }
